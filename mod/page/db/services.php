@@ -49,10 +49,12 @@ $functions = array(
     'mod_page_submit_video_response' => array(
         'classname'     => 'mod_page_external',
         'methodname'    => 'submit_video_response',
-        'classpath'     => 'Log a video response',
+        'description'     => 'Log a video response',
+        'classpath'     => 'mod/assign/classes/external.php',
         'type'          => 'write',
         'ajax'          => true,
-        'capabilities'  => 'mod/page:view_videp'
+        'capabilities'  => 'mod/page:view_video',
+        'services'      => array(MOODLE_OFFICIAL_MOBILE_SERVICE)
     ),
     'mod_page_get_pages_by_courses' => array(
         'classname'     => 'mod_page_external',
